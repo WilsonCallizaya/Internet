@@ -1,0 +1,9 @@
+create database bd_internet;
+use bd_internet;
+create table estudiantes (id int(11) auto_increment primary key, nombre varchar(100), apellido varchar(100), seminario varchar(30), confirmado varchar(2), fecha date); 
+
+insert into estudiantes (nombre,apellido,seminario, confirmado, fecha) values ("Zacarias","Flores","Esteganografia","si",'2024-05-02');
+insert into estudiantes (nombre,apellido,seminario, confirmado, fecha) values ("Zoyla","Vaca","Criptografia","no",'2024-05-07');
+insert into estudiantes (nombre,apellido,seminario, confirmado, fecha) values ("Aquiles","Castro","Hacking Web","si",'2024-05-10');
+
+select * from estudiantes;
